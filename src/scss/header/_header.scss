@@ -15,5 +15,9 @@
 
     &__logo {
         width: 30rem;
+        margin-top: 5rem;
+        @include m.desktop{ 
+            margin-bottom: 0;
+        }
     }
 }
