@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "maria leonor pinto sabater",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.3.1",
@@ -25,5 +26,12 @@
     "> 1%"
   ],
   "dependencies": {},
-  "author": "maria leonor pinto sabater"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/topgirl2410/DeliveryApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/topgirl2410/DeliveryApp/issues"
+  },
+  "homepage": "https://github.com/topgirl2410/DeliveryApp#readme"
 }
