@@ -6,17 +6,23 @@
     padding: v.$separacion 0;
 
     &__grid {
-        @include m.tablet { 
-            @include m.grid(2, v.$separacion)
+        display: flex;
+        flex-direction: column-reverse;
+
+        @include m.tablet {
+            @include m.grid(2, v.$separacion);
         }
     }
 
     &__imagen {
-        width: 80%;  // Tamaño de la imagen
-        margin: 0 auto;
-        transition-property: transform ;
+        width: 50%;
+        margin: v.$separacion auto 0 auto;
+        transition-property: transform;
         transition-duration: 300ms;
 
+        @include m.tablet {
+            margin-top: 0;
+        }
         &:hover {
             transform: rotate(4deg) scale(1.2);
         }

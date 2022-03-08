@@ -733,9 +733,6 @@ h3 {
   text-align: center;
   color: #455a64;
 }
-.repartidores__imagen {
-  width: 60%;
-}
 @media (min-width: 768px) {
   .repartidores__grid {
     display: grid;
@@ -746,7 +743,7 @@ h3 {
 .repartidores__contenido {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
 .repartidores__texto {
@@ -766,7 +763,6 @@ h3 {
   text-decoration: none;
   transition: background-color 0.3s ease;
   border: none;
-  width: auto;
 }
 .repartidores__enlace:hover {
   cursor: pointer;
@@ -782,6 +778,10 @@ h3 {
   background-color: #eceeef;
   padding: 5rem 0;
 }
+.descargar__grid {
+  display: flex;
+  flex-direction: column-reverse;
+}
 @media (min-width: 768px) {
   .descargar__grid {
     display: grid;
@@ -790,15 +790,51 @@ h3 {
   }
 }
 .descargar__imagen {
-  width: 80%;
-  margin: 0 auto;
+  width: 50%;
+  margin: 5rem auto 0 auto;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   transition-duration: 300ms;
 }
+@media (min-width: 768px) {
+  .descargar__imagen {
+    margin-top: 0;
+  }
+}
 .descargar__imagen:hover {
   -webkit-transform: rotate(4deg) scale(1.2);
           transform: rotate(4deg) scale(1.2);
+}
+
+.tiendas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tiendas__heading, .tiendas__texto {
+  text-align: center;
+}
+.tiendas__heading {
+  color: #455a64;
+  margin: 2rem 0 0 0;
+}
+.tiendas__texto {
+  margin-bottom: 3rem;
+}
+.tiendas__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.tiendas__enlace {
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 500ms;
+}
+.tiendas__enlace:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=app.css.map */
